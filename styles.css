@@ -11,7 +11,7 @@ body {
    margin: 0;
    background-color:#f5f6fa !important;
 }
-body input {
+body input, button {
   font-family: nuku, monospace;
 }
 
@@ -33,10 +33,10 @@ header div.jumbotron {
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
-  font-size: 20px;
+  font-size: 15px;
   padding: 30px;
   text-align: center;
-  color: white;
+  color: #f5f6fa;
   text-shadow: 0.8px 0.8px #282c34;
 }
 
@@ -57,7 +57,7 @@ nav.navigasi {
 
 nav.navigasi li {
   display: inline;
-  font-size: 20px;
+  font-size: 30px;
   list-style-type: none;
   margin:0 2rem 0 2rem ;
 }
@@ -75,12 +75,15 @@ nav.navigasi a:hover {
 main {
     padding:1rem 6rem 1rem 6rem;
     overflow: auto;
+    margin : 0 0 1rem 0;
 }
 /** content 1 */
 main div.content1 {
   display: flex;
   flex-wrap: wrap;
+  font-size: 25px;
 }
+
 /** SEARCH BAR */
 main section.searchbar {
   padding: 1rem 1rem 0 0;
@@ -93,7 +96,7 @@ main section.searchbar form input.search {
   width: 90%;
   text-align: left;
   background-color: #282c34;
-  color: white;
+  color: #f5f6fa;
   text-align: center;
   padding:0.7rem 0 0.7rem 0;
   border:1px solid #282c34;
@@ -101,7 +104,7 @@ main section.searchbar form input.search {
 }
 
 main section.searchbar form input.search::-webkit-input-placeholder {
-  color: white;
+  color: #f5f6fa;
 }
 
 /* SUBMIT */
@@ -130,9 +133,10 @@ main section.searchtittle {
 /** Content2 */
 main div.content2 {
   background-color:#282c34 ;
-  color:white;
+  color:#f5f6fa;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin: 1rem 0 0.5rem 0;
+  font-size: 20px;
 }
 main div.content2 h3 {
   text-align: center;
@@ -155,6 +159,7 @@ main div.content2 section.category form input[type="checkbox"]:checked + label {
 /* Checkbox Submit */
 main div.content2 section.category form input.submit {
   width: 70%;
+  font-size: 20px;
   background-color: #e06c75;
   color: #282c34;
   text-align: center;
@@ -168,20 +173,145 @@ main div.content2 section.category form input.submit:hover {
   border:1px solid #98c379;
 }
 
+/* Content3 */
+main div.content3 {
+  font-size: 20px;
+}
+main div.content3 h3 {
+  text-align: center;
+}
+
+main div.content3 section.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main div.content3 section.item div.itemlist {
+  color: #f5f6fa;
+  border-radius: 5px;
+  border: 1px solid #282c34;;
+  width: 24%;
+  margin: 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+}
+
+main div.content3 section.item div.itemlist:hover {
+  border: 1px solid #98c379;
+  border-radius: 5px;
+}
+
+
+main div.content3 section.item div.itemlist span.number {
+  color: #282c34;
+}
+
+
+
+main div.content3 section.item div.itemlist div.banner{
+  height: 130px;
+  margin: 0;
+}
+main div.content3 section.item div.itemlist div.descript{
+  background-color: #282c34;
+  height: 100px;
+  margin: 0;
+  line-height: 5px;
+}
+
+main div.content3 section.item div.itemlist div.descript span{
+  font-size: 60%;
+}
+
+main div.content3 section.item div.itemlist div.label{
+  background-color: #282c34;
+  height: 70px;
+  margin: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+
+main div.content3 section.item div.itemlist img {
+  height: 100%;
+}
+
+/* Lihat selengkapnya */
+main div.content3 {
+  text-align: center;
+}
+main div.content3 button {
+  font-size: 20px;
+  width: 10rem;
+  background-color: #282c34;
+  color: #f5f6fa;
+  text-align: center;
+  padding:0.5rem 0.2rem 0.5rem 0.2rem;
+  border: 0;
+  border-radius: 10px;
+}
+
+main div.content3 button:hover {
+  background-color: #98c379;
+}
+
+
+/* Content 4 */
+main div.content4 {
+  font-size: 18px;
+  background-color: #282c34;
+  color: #f5f6fa;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+main div.content4 section.quis img {
+  width: 50%;
+  max-width: 200px;
+  min-width: 150px;
+}
+
+main div.content4 h3 {
+  text-align: center;
+}
+
+main div.content4 section.quis button {
+  font-size: 20px;
+  width: 8rem;
+  background-color: #e06c75;
+  color: #282c34;
+  text-align: center;
+  padding:0.5rem 0.2rem 0.5rem 0.2rem;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+}
+
+main div.content4 section.quis button:hover {
+  background-color: #98c379;
+}
+
+/* Footer */
+
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  color: white;
+  color: #f5f6fa;
   background-color:#282c34 !important;
   margin: auto;
+  
 }
 
 footer {
   text-align: center;
 }
 footer section.author {
+  font-size: 25px;
   flex: 50%;
 }
 
@@ -190,6 +320,7 @@ footer section.author p {
 }
 
 footer section.social {
+  font-size: 25px;
   flex: 50%;
 }
 
@@ -206,13 +337,17 @@ footer section.social a:hover {
 /*** MOBILE STYLE */
 @media screen and (max-width: 765px) {
   /*** HEADER */
+  header div.jumbotron {
+    font-size: 10px;
+    
+  }
   /** NAVIGASI */
   nav.navigasi {
-    font-size: 15px;
     position: sticky;
     top: 0;
   }
   nav.navigasi li {
+    font-size: 15px;
     margin:0 1rem 0 1rem ;
   }
   /*** MAIN */
@@ -221,6 +356,9 @@ footer section.social a:hover {
     padding:1rem 3rem 0 3rem;
   }
   /* SEARCH BAR */
+  main div.content1 {
+    font-size: 15px;
+  }
   main section.searchbar {
     text-align: center;
     padding: 1rem 0 0 0;
@@ -242,15 +380,51 @@ footer section.social a:hover {
   }
   
   /* Kategory */ 
+  main div.content2 {
+    font-size: 15px;
+  }
   main div.content2 section.category form {
   text-align: center;
   padding: 0 4rem 1rem 4rem;
   }
+  main div.content2 section.category form input.submit {
+    font-size: 15px;
+  }
   
+  /* Content3 */
+  main div.content3{
+    font-size: 15px;
+  }
+  main div.content3 section.item div.itemlist div.banner{
+  height:100px;
+  }
+  main div.content3 section.item div.itemlist div.descript{
+  height:80px;
+  }
+  main div.content3 section.item div.itemlist div.label{
+  height: 50px;
+  }
+  
+  main div.content3 section.item div.itemlist {
+    width: 48%;
+  }
+  
+  main div.content3 button {
+  font-size: 15px;
+  }
+  /* content 4  */
+  main div.content4 {
+  font-size: 15px;
+  }
+  main div.content4 section.quis button {
+  font-size: 15px;
+  }
   /* FOOTER */
   footer {
     text-align: center;
+    
   }
+  
   footer section.social li {
   display: block;
   list-style-type: none;
@@ -258,8 +432,11 @@ footer section.social a:hover {
   
   footer section.author {
   flex: 100%;
+  font-size: 15px;
   }
+  
   footer section.social {
   flex: 100%;
+  font-size: 15px;
   }
 }
