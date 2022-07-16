@@ -1,18 +1,18 @@
 /*** FONT */
 @font-face {
-    font-family: 'nuku'; 
-    src: url('assets/font/nuku1.ttf');
+    font-family: 'basara'; 
+    src: url('assets/font/BASARA.ttf');
 }
 
 /*** GLOBAL STYLE */
 body {
-   font-family: nuku, monospace;
+   font-family: basara, monospace;
    padding: 0;
    margin: 0;
    background-color:#f5f6fa !important;
 }
 body input, button {
-  font-family: nuku, monospace;
+  font-family: basara, monospace;
 }
 
 html,body {scroll-behavior: smooth;}
