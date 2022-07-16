@@ -1,0 +1,265 @@
+/*** FONT */
+@font-face {
+    font-family: 'nuku'; 
+    src: url('assets/font/nuku1.ttf');
+}
+
+/*** GLOBAL STYLE */
+body {
+   font-family: nuku, monospace;
+   padding: 0;
+   margin: 0;
+   background-color:#f5f6fa !important;
+}
+body input {
+  font-family: nuku, monospace;
+}
+
+html,body {scroll-behavior: smooth;}
+
+a {text-decoration: none;}
+
+* {
+  box-sizing: border-box;
+}
+
+/*** STYLING */
+
+/** HEADER STYLE */
+
+/* JUMBOTRON */
+header div.jumbotron {
+  background-image:url(assets/image/arena.png);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 0.8px 0.8px #282c34;
+}
+
+header div.jumbotron img {
+  width: 50%;
+  max-width: 200px;
+  min-width: 150px;
+}
+
+/* NAVIGASI */
+nav.navigasi {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  background-color:#282c34;
+  position: sticky;
+  top: 0;
+}
+
+nav.navigasi li {
+  display: inline;
+  font-size: 20px;
+  list-style-type: none;
+  margin:0 2rem 0 2rem ;
+}
+
+nav.navigasi a {
+  font-weight: 400;
+  color:#e06c75;
+}
+
+nav.navigasi a:hover {
+        color: #98c379 ;
+}
+
+/*** MAIN */
+main {
+    padding:1rem 6rem 1rem 6rem;
+    overflow: auto;
+}
+/** content 1 */
+main div.content1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+/** SEARCH BAR */
+main section.searchbar {
+  padding: 1rem 1rem 0 0;
+  flex: 45%;
+  text-align: center;
+  order: 2;
+}
+
+main section.searchbar form input.search {
+  width: 90%;
+  text-align: left;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding:0.7rem 0 0.7rem 0;
+  border:1px solid #282c34;
+  border-radius: 10px;
+}
+
+main section.searchbar form input.search::-webkit-input-placeholder {
+  color: white;
+}
+
+/* SUBMIT */
+main section.searchbar form input.submit {
+  width: 70%;
+  text-align: left;
+  background-color: #e06c75;
+  color: #282c34;
+  text-align: center;
+  padding:0.7rem 0 0.7rem 0;
+  border: 0;
+  border-radius: 10px;
+}
+main section.searchbar form input.submit:hover {
+  background-color: #98c379;
+  border:1px solid #98c379;
+}
+
+/* SEARCH TITTLE */
+main section.searchtittle {
+  flex: 53%;
+  padding: 0 0 0 1rem;
+  order: 1;
+}
+
+/** Content2 */
+main div.content2 {
+  background-color:#282c34 ;
+  color:white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem 0 0.5rem 0;
+}
+main div.content2 h3 {
+  text-align: center;
+}
+
+/* Checkbox */
+main div.content2 section.category form {
+  text-align: center;
+  padding: 0 12rem 2rem 12rem;
+}
+
+main div.content2 section.category form input[type="checkbox"] {
+  display: none;
+}
+
+main div.content2 section.category form input[type="checkbox"]:checked + label {
+  color: #e06c75;
+}
+
+/* Checkbox Submit */
+main div.content2 section.category form input.submit {
+  width: 70%;
+  background-color: #e06c75;
+  color: #282c34;
+  text-align: center;
+  padding:0.2rem 0 0.2rem 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+main div.content2 section.category form input.submit:hover {
+  background-color: #98c379;
+  border:1px solid #98c379;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  background-color:#282c34 !important;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+}
+footer section.author {
+  flex: 50%;
+}
+
+footer section.author p {
+  color:#e06c75 ;
+}
+
+footer section.social {
+  flex: 50%;
+}
+
+footer section.social li {
+  display: inline;
+}
+footer section.social a {
+  color:#e06c75;
+}
+footer section.social a:hover {
+  color:#98c379;
+}
+
+/*** MOBILE STYLE */
+@media screen and (max-width: 765px) {
+  /*** HEADER */
+  /** NAVIGASI */
+  nav.navigasi {
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+  }
+  nav.navigasi li {
+    margin:0 1rem 0 1rem ;
+  }
+  /*** MAIN */
+  /** content */
+  main {
+    padding:1rem 3rem 0 3rem;
+  }
+  /* SEARCH BAR */
+  main section.searchbar {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    flex: 100%;
+    order: 1;
+  }
+  main section.search-bar .search {
+    padding:0.6rem 0 0.6rem 0;
+  }
+  main section.search-bar .submit {
+    padding:0.5rem 0 0.5rem 0;
+  }
+  /* SEARCH TITTLE */
+  main section.searchtittle {
+    text-align: center;
+    flex: 100%;
+    padding: 0 0 0 0;
+    order: 2;
+  }
+  
+  /* Kategory */ 
+  main div.content2 section.category form {
+  text-align: center;
+  padding: 0 4rem 1rem 4rem;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+  }
+  footer section.social li {
+  display: block;
+  list-style-type: none;
+  }
+  
+  footer section.author {
+  flex: 100%;
+  }
+  footer section.social {
+  flex: 100%;
+  }
+}
